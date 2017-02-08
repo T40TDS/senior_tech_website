@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Open+Sans|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-card-2 w3-left-align w3-large" style="background-color:#0B486B; color:white; ">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </li>
+    <li><a href="index.html" class="w3-padding-large">Home</a></li>
+    <li class="w3-hide-small"><a href="approach.html" class="w3-padding-large w3-hover-white w3-white">Approach</a></li>
+    <li class="w3-hide-small"><a href="code.html" class="w3-padding-large w3-hover-white">Demo</a></li>
+    <li class="w3-hide-small"><a href="code.html" class="w3-padding-large w3-hover-white">Code and Schematics</a></li>
+    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Results</a></li>
+    <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About Me</a></li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-large w3-black">
+      <li><a class="w3-padding-large" href="#">Background</a></li>
+      <li><a class="w3-padding-large" href="#">Demo</a></li>
+      <li><a class="w3-padding-large" href="#">Code and Schematics</a></li>
+      <li><a class="w3-padding-large" href="#">Link 4</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Header -->
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 id ="pose">Pose Estimation</h1>
+        <p>Pose estimation is described by Juan Li et al, as such:
+             <span style="padding-left: 20px; display:block">The term ‘pose’ is usually employed to refer to the combined information on position and orientation of a moving target (i.e., an object or a human). Position is represented by the three- dimensional location of the object, while orientation may be ex- pressed as a set of consecutive rotations (Li et al., 2017)</span>
+              Tracking pose over time gives an object’s trajectory. Pose is measured by inertial sensors, sensors that track acceleration. Position tracking is immensely powerful and promising in a variety of applications in entertainment, navigation (N. Zhu et al, 2015) and even medicine (Gorder 2012). Specifically, in the past few years, the popularity of consumer virtual reality devices has skyrocketed.  Tracking position in 3D space has proved to be more of a challenge than it might first appear. Most consumer VR devices make use of gyroscope to track orientation, but rely on a trackpad or controller for movement. Even if VR software does make use of position tracking, it does so in an incredibly limited scope, limiting movement to a few square meters, where drift error is minimized. Position tracking is not just limited to VR entertainment, precise indoor tracking can help a consumer navigate through an IKEA or guide a firefighter out of a burning building. Motion tracking joints in tennis athletes was even shown to prevent athletic injuries (Gorder 2012).
+        </p>
+      <h1 id="6dof">6 DOF Inertial Measurment</h1>
+
+        <p>Measuring spaital position in R<sup>3</sup> space requires six degrees of freedom. This means 6 discrete measurements are required. 3 for rotation, 3 for position. The position measurments should be trivial to understand. They are expressed with respect to three orthagonal axies. The rotational measurements are a little more difficult to compreheend.</p>
+        <p>Rotational measurements can be measured in several paradigms. Euler angles are the most versatile paradigm. You can think of these angles as pitch, yaw, and roll.</p>
+        <img src = "Euler.gif">
+      
+
+
+      <h1 id ="integrationError">Integration Error</h1>
+
+        <p>
+            The only measurements we <i>can</i> really take are inertial measurments. These are obtained via the inertial sensors. To get from accelration
+            to position an <a href="background.html#integration">integration algorithm</a> must be applied twice. In numerical integration, there will be some loss of percision,
+            since this algorithm is applied twice several times a second, the error can compound very quickly.
+        </p>
+
+
+
+      <h1 id ="integration">Numerical Integration</h1>
+
+        <p>
+            An integral is an anti-derivitive. Some sort of numerical integration technique must be applied to get the integral of discrete data points. In the case of this project, the right hand rule approximation was used.
+        </p>
+
+    </div>
+
+    <div class="w3-third w3-center"><!--Insert Image here-->
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+
+ <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

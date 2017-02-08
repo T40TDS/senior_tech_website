@@ -1,0 +1,11 @@
+h1,.scheme-header,.desc,.image {background-color:#0B486B; color:white; border-radius:10px; padding:.5em; }
+h5 {padding:.5em}
+h1 {font-size: 20pt}
+a {color:#3B8686; text-decoration: none;}
+.w3-top a {color:white}
+.desc { padding:1em;text-align:right}
+.image{float:left;padding:1em}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-navbar,h1,h2,button {font-family:'Abel', sans-serif; }
+p {font-family:'Lato', sans-serif;}
+.fa-anchor,.fa-coffee {font-size:200px}

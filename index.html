@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Open+Sans|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+<style>
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-card-2 w3-left-align w3-large" style="background-color:#0B486B; color:white; ">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </li>
+    <li><a href="#" class="w3-padding-large w3-white">Home</a></li>
+    <li class="w3-hide-small"><a href="approach.html" class="w3-padding-large w3-hover-white">Approach</a></li>
+    <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">Glossary</a></li>
+    <li class="w3-hide-small"><a href="code.html" class="w3-padding-large w3-hover-white">Demo</a></li>
+    <li class="w3-hide-small"><a href="code.html" class="w3-padding-large w3-hover-white">Code and Schematics</a></li>
+    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Results</a></li>
+    <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About Me</a></li>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-large w3-black">
+      <li><a class="w3-padding-large" href="#">Approach</a></li>
+      <li><a class="w3-padding-large" href="#">Demo</a></li>
+      <li><a class="w3-padding-large" href="#">Code and Schematics</a></li>
+      <li><a class="w3-padding-large" href="#">Link 4</a></li>
+      <li><a class="w3-padding-large" href="#">About Me</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-navy w3-center w3-padding-128" style="overflow:hidden; zoom:1;background-image:url(accel.jpg); background-size:cover">
+  <div style=" margin: auto; display:block; width: 70%; padding: .5em; border-radius:10px">
+    <h2 class="w3-margin w3-jumbo" style="text-shadow:2px 2px #000000; color:#FFFFFF">Inertial-Proximity Sensor Fusion</h2>
+    <p class="w3-xlarge" style="text-shadow:2px 2px #000000; color:#FFFFFF"> Thomas Jefferson High School for Science and Technology</p>
+  </div>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird" style="width:100%;margin 0 auto">
+      <h1 class="scheme-header">A RFID integrated approach to inertial position tracking in 3D space</h1>
+      <h5 class=""><p>From virtual reality to local indoor navigation. Local position tracking is crutial for modern technology.
+        I explored supplementing rudimentary techniques with an RFID calibration approach. EXPLAIN WHAT RFID IS</p> </h5>
+      <p> </p></h5>
+    </div>
+
+    <div class="w3-third w3-center"><!--Insert Image here-->
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+ <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
